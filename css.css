@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    color: #d00000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #d00000;
+    font-family: 'Noto Sans';
+    font-weight: bold;
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.profile-header {
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.profile-name {
+    margin: 0;
+    font-weight: bold;
+}
+
+.korean {
+    font-size: 14px;
+    color: white;
+}
+
+.english {
+    font-size: 8px;
+    color: white;
+}
+
+/* Introduction Section */
+.introduction {
+    background-color: #d00000;
+    color: #f8f9fa;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.introduction h3 {
+    margin: 0;
+}
+
+/* Biography Section */
+.biography {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bio-item {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.bio-item h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #222;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+}

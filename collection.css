@@ -1,0 +1,208 @@
+/* Reset dasar */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'SF UI Display'; /* Font dasar */
+    transition: background-color 0.3s, color 0.3s; /* Transisi smooth untuk dark mode */
+}
+
+/* Header Styling */
+header {
+    position: relative;
+    height: 100px; /* Tinggi header */
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Judul Utama (H1) */
+header h1 {
+    font-size: 60px; /* Ukuran font */
+    font-family: 'Noto Serif';
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: -2px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Untuk menempatkan teks di tengah */
+    text-align: center;
+}
+
+/* Ukuran lebih kecil untuk simbol &copy; */
+.small-copy {
+    font-size: 50%; /* Ukuran relatif, bisa diubah */
+    vertical-align: top; /* Posisi lebih sejajar dengan teks */
+}
+
+/* Tombol untuk toggle dark mode */
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+    transition: color 0.3s;
+}
+
+/* Mode gelap */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Mode gelap untuk header */
+body.dark-mode header {
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #444;
+}
+
+/* Item Koleksi */
+.item {
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Membuat sudut gambar rounded */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s; /* Transisi untuk hover */
+}
+
+/* Hover effect for items */
+.item:hover {
+    background-color: #f0f0f0; /* Warna latar belakang saat hover */
+    border-color: #D00000; /* Warna border saat hover */
+    transform: scale(1.05); /* Efek perbesaran saat hover */
+}
+
+/* Gambar dalam Koleksi */
+.item img {
+    width: 100%; /* Memastikan gambar memenuhi elemen */
+    height: auto; /* Menjaga proporsi gambar */
+    max-height: none; /* Menghilangkan batasan tinggi maksimal */
+    object-fit: contain; /* Menyesuaikan gambar agar tidak terpotong */
+    border-radius: 10px; /* Membuat sudut gambar rounded */
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+}
+
+/* Tombol Hamburger */
+.hamburger-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    color: #000; /* Warna default tombol */
+}
+
+/* Mode gelap: Tombol Hamburger */
+body.dark-mode .hamburger-btn {
+    color: #fff; /* Ubah warna ikon tombol hamburger di dark mode */
+}
+
+/* Menu Hamburger */
+.hamburger-nav {
+    display: none; /* Menyembunyikan menu secara default */
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9;
+}
+
+.hamburger-nav.show {
+    display: flex; /* Menampilkan menu ketika 'show' diterapkan */
+}
+
+.hamburger-nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'SF UI Display';
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.hamburger-nav a:hover {
+    color: #D00000;
+}
+
+/* Mode gelap untuk menu hamburger */
+body.dark-mode .hamburger-nav {
+    background-color: black; /* Ganti latar belakang menu saat dark mode */
+    border-color: white;
+}
+
+body.dark-mode .hamburger-nav a {
+    color: #fff; /* Ganti warna teks di menu saat dark mode */
+}
+
+body.dark-mode .hamburger-nav a:hover {
+    color: #D00000; /* Warna hover untuk teks di menu saat dark mode */
+}
+
+/* Grid Koleksi */
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Membuat 4 kolom dengan lebar yang sama */
+    gap: 20px; /* Jarak antar elemen grid */
+    padding: 20px; /* Memberikan jarak ke tepi kontainer */
+    justify-items: center; /* Menempatkan item di tengah kolom */
+    align-items: start; /* Menyesuaikan posisi vertikal item */
+    font-family: 'Noto Serif';
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+/* Mode gelap untuk item koleksi */
+body.dark-mode .item {
+    background-color: #333;
+    border-color: #555;
+}
+
+/* Tombol See More */
+.see-more {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px; /* Menambahkan jarak di bawah tombol */
+}
+
+.see-more-btn {
+    display: inline-block;
+    padding: 8px 26px;
+    background-color: #D00000; /* Warna latar belakang tombol */
+    color: white; /* Warna font */
+    text-decoration: none;
+    font-size: 16px;
+    border: 3px solid #D00000; /* Border berwarna yang sesuai dengan background */
+    border-radius: 10px; /* Rounded corner untuk tombol */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    font-family: 'Noto Serif'; /* Font khusus untuk deskripsi */
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+/* Tombol See More di mode gelap */
+body.dark-mode .see-more-btn {
+    background-color: black;
+}
+
+/* Efek hover untuk tombol */
+.see-more-btn:hover {
+    background-color: white; /* Warna latar belakang tombol saat hover */
+    color: #D00000; /* Warna font berubah menjadi putih saat hover */
+    border-color: #D00000; /* Border berubah menjadi putih saat hover */
+}

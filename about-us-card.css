@@ -1,0 +1,59 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('about\ \(1\).jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+  
+  .card {
+    width: 700px; /* Ukuran kartu */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eaeaea;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi saat hover */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Membesarkan kartu saat hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Menambahkan efek bayangan */
+  }
+  
+  .card-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .card-content {
+    margin-top: 20px;
+  }
+  
+  .card-content .paragraph {
+    font-size: 16px;
+    color: #333;
+    margin: 8px 0;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 150px;
+    width: 150px;
+    background-image: url('path-to-wave-pattern.png'); /* Replace with the pattern if needed */
+    background-size: cover;
+    opacity: 0.1;
+  }
+  
